@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--<div class="grid">-->
+            <header>
+                <nav class="div-bar">
+                    <a href="#" class="div-branding">DEV.</a>
+                    <ul class="div-menu">
+                        <li class="div-item">
+                            <a href="#" class="div-link">Home</a>
+                        </li>
+                        <li class="div-item">
+                            <a href="#" class="div-link">About</a>
+                        </li>
+                        <li class="div-item">
+                            <a href="#" class="div-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+
+            </header>
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const divmenu = document.querySelector(".div-menu");
+
+                hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                divmenu.classList.toggle("active");
+                })
+                document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                hamburger.classList.remove("active");
+                }))
+            </script>
+
+                            <!--<div class="grid item item-1"><a href="https://corp.asics.com/en/investor_relations">INVESTOR RELATIONS</a>
+                <p>ASICS Growth Plan 2020 has been developed to maximize our global performance.</p></div>
+            <div class="grid item item-2">
+                <img src="two.png" alt="two">
+            </div>
+            <div class="grid item item-3">
+                <a href="https://corp.asics.com/en/press">PRESS CENTER</a>
+                        <p>Visit our Press Center to keep updated with ASICS news</p>
+            </div>
+            <div class="grid item item-4"><img src="three.png" alt="three"></div>
+            <div class="grid item item-5"><img src="one.png" alt="one"></div>
+            <div class="grid item item-6"><a href="https://corp.asics.com/en/csr">SUSTAINAVILITY</a>
+                <p>Through our products and services, we aim to contribute to a healthy society. By integrating sustainability into every aspect of our business, we aim not only to create value for our customers and shareholders, but also for the world around us.</p></div>
+            <div class="grid item item-7"><img src="four.png" alt="four"></div>
+            <div class="grid item item-8"><a href="https://corp.asics.com/en/career">CAREER</a>
+                <p>Reach out to the world and grow as one team.</p></div>
+        </div>-->
+    </body>
+</html>
